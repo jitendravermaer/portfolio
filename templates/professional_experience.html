@@ -1,0 +1,74 @@
+{% include 'header.html' %}
+{% block head %}
+{% endblock %}
+
+<div class="video-background-container">
+    <video autoplay muted loop playsinline class="video-background">
+        <source src="{{ url_for('static', filename='assets/video/professional-experience-bg.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<section class="page-section" id="professional-experience">
+    <div class="video-overlay-content">
+    <div class="container">
+        <br>
+        <br>
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Professional Experience</h2>
+
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+
+        <!-- Professional Experience Content-->
+        <p class="text-center mb-5">
+            Here are my professional experiences, showcasing my contributions to various projects and organizations.
+        </p>
+
+        <section id="professional-experience" class="section">
+                <div class="experience-item">
+                    <h3>Intern - GIP Technologies Pvt. Ltd.</h3>
+                    <p class="date">10/08/2023 - 08/11/2023</p>
+                    <ul>
+                        <li>Learned Python programming and explored libraries such as pandas and Flask/Django
+                            frameworks.</li>
+                        <li>Worked on database integration using SQL and completed several projects during the
+                            internship.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>System Support Specialist: Login Agent - L&T Finance</h3>
+                    <p class="date">01/08/2024 - 07/11/2024</p>
+                    <ul>
+                        <li>Managed technical assistance and troubleshooting for systems.</li>
+                        <li>Oversaw user access security and system logins as a Login Agent.</li>
+                        <li>Acted as a Customer Care Executive, addressing inquiries and ensuring client satisfaction.
+                        </li>
+                    </ul>
+                </div>
+               
+                <div class="container">    
+        <p class="text-center mb-5">
+            My professional experiences have provided me with valuable skills in software development, problem-solving, and teamwork. I am eager to apply these skills to new challenges and contribute to innovative projects.
+        </p>
+
+    </div>
+                
+            </section>
+
+            <div class="text-center mt-4">
+            <a class="btn btn-primary btn-xl text-uppercase" href="{{ url_for('index') }}">Back to Home</a>
+            </div>
+            <br>
+    </div>
+    </div>
+</section>
+     
+    
+
+{% include 'footer.html' %}
+{% block foot %}
+{% endblock %}

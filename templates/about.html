@@ -1,0 +1,95 @@
+{% include 'header.html' %}
+{% block head %}{% endblock %}
+
+
+<section class="page-section text-white mb-0 bg-about" id="about" style="position: relative; overflow: hidden;">
+    
+    <section class="container py-5 px-4" style="background: rgba(0, 0, 0, 0.65); border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); transform: perspective(1000px);">
+        <div class="text-center mb-4">
+            <img src="/static/assets/img/profile2.jpg" alt="Jitendra Verma" class="shadow-lg" width="220" height="220" style="border: 5px solid white; border-radius: 15px; transform: rotateX(5deg) rotateY(5deg); box-shadow: 0 15px 30px rgba(0,0,0,0.5);">
+            <h3 class="mt-3 text-light fw-bold">Jitendra Verma</h3>
+            <p class="text-muted">Software Developer</p>
+        </div>
+
+            <div class="divider-custom divider-light mb-4">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-user-circle"></i></div>
+            <div class="divider-custom-line"></div>
+            </div>
+
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <p class="lead">Hey there! I'm <strong>Jitendra Verma</strong>, a Computer Science Engineer recently graduated in May 2025 from Modi Institute of Technology, Kota. I'm a passionate tech enthusiast who loves turning ideas into code and challenges into solutions.</p>
+
+                <p class="lead">I specialize in <strong>Full-Stack Development</strong>, working with Java, Python, C, C++, HTML, CSS, JavaScript, and frameworks like Django and Flask. Whether it’s backend logic or interactive web apps, I enjoy building things that matter.</p>
+
+                <div class="row text-center my-4">
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow border-0" style="background: linear-gradient(to bottom right, #2b2b2b, #3e3e3e); transform: rotateY(2deg);">
+                            <div class="card-body text-white">
+                                <h5 class="card-title">Tech Stack</h5>
+                                <p class="card-text">Java, Python, C++, JavaScript, Django, Flask, React</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow border-0" style="background: linear-gradient(to bottom right, #2b2b2b, #3e3e3e); transform: rotateY(2deg);">
+                            <div class="card-body text-white">
+                                <h5 class="card-title">Interests</h5>
+                                <p class="card-text">AI, Machine Learning, Competitive Programming</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow border-0" style="background: linear-gradient(to bottom right, #2b2b2b, #3e3e3e); transform: rotateY(2deg);">
+                            <div class="card-body text-white">
+                                <h5 class="card-title">Goals</h5>
+                                <p class="card-text">Build impactful solutions, continuous learning, global collaboration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="lead">Currently, I’m diving into <strong>AI and Machine Learning</strong>, exploring how these technologies can revolutionize software interaction. I’m also sharpening my Data Structures and Algorithms for real-world and competitive challenges.</p>
+
+                <p class="lead">When not coding, I explore tech trends, contribute to open-source, or collaborate on projects. I believe in community, collaboration, and continuous learning.</p>
+
+                <p class="lead">If you’re seeking a dedicated Software Developer ready to create impactful solutions, let’s connect!</p>
+
+                <h4 class="text-white">What Drives Me</h4>
+                <p class="lead">I learn by doing — from AI bootcamps to fixing bugs at night, I believe in building fast and learning faster. I'm eager to contribute, grow, and innovate with great teams.</p>
+            </div>
+        </div>
+
+        <div class="row text-center mt-5">
+    <div class="col-md-4 mb-4">
+        <div class="position-relative overflow-hidden rounded shadow-lg" style="aspect-ratio: 3/2; animation: fadeInUp 0.6s ease;">
+            <img src="/static/assets/img/profile3.jpg" alt="Profile 1" class="img-fluid w-100 h-100" style="object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="position-relative overflow-hidden rounded shadow-lg" style="aspect-ratio: 3/2; animation: fadeInUp 0.8s ease;">
+            <img src="/static/assets/img/profile4.jpg" alt="Profile 2" class="img-fluid w-100 h-100" style="object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="position-relative overflow-hidden rounded shadow-lg" style="aspect-ratio: 3/2; animation: fadeInUp 1s ease;">
+            <img src="/static/assets/img/profile5.jpg" alt="Profile 3" class="img-fluid w-100 h-100" style="object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+    </div>
+</div>
+
+
+
+    </div>
+
+    <div class="text-center mt-4">
+    <a class="btn btn-outline-light btn-xl text-uppercase shadow" href="{{ url_for('index') }}">Back to Home</a>
+    </div>
+    
+</section>
+</section>
+
+
+{% include 'footer.html' %}
+{% block foot %}{% endblock %}

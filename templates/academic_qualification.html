@@ -1,0 +1,52 @@
+{% include 'header.html' %}
+{% block head %}
+{% endblock %}
+ 
+<!-- Academic Qualification Section-->
+<section class="page-section bg-education" id="academic-qualification">
+    <div class="container" style="background-color: rgba(255,255,255,0.85); padding: 2rem;">
+        <br>
+        <br>
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Academic Qualification</h2>
+
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+
+        <!-- Academic Qualification Content-->
+        <p class="text-center mb-5">
+            Here are my academic qualifications, showcasing my dedication to learning and excellence in the field of Computer Science.
+        </p>
+                <ul>
+                    <li>
+                        <strong>B.Tech (Computer Science):</strong> Secured
+                        <a href="CERTIFICATE/Jitendra Verma.pdf" target="_blank"> 8.5+ CGPA</a>,
+                        Modi Institute of Technology, Kota
+                        (2021-2025)
+                    </li>
+                    <li>
+                        <strong>Intermediate (12th):</strong> Secured 
+                        <a href="path-to-intermediate-marksheet.pdf" target="_blank">81.8%</a>, LBS School, Kota (2020-21)
+                    </li>
+                    <li>
+                        <strong>Matriculation (10th):</strong> Secured 
+                        <a href="path-to-matriculation-marksheet.pdf" target="_blank">82.8%</a>, LBS School, Kota (2018-19)
+                    </li>
+                </ul>
+        <p class="text-center mb-5">
+            My academic journey has equipped me with a strong foundation in computer science principles, programming languages, and software development methodologies. I am committed to continuous learning and applying my knowledge to real-world challenges.
+        </p>
+
+        <div class="text-center mt-4">
+            <a class="btn btn-primary btn-xl text-uppercase" href="{{ url_for('index') }}">Back to Home</a>
+        </div>
+
+    </div>
+</section>
+
+{% include 'footer.html' %}
+{% block foot %}
+{% endblock %}

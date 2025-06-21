@@ -1,0 +1,105 @@
+{% include 'header.html' %}
+{% block head %}
+{% endblock %}
+
+<section class="page-section portfolio bg-hobbies" id="hobbies">
+
+    <div class="container">
+
+        <br>
+        <br>
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Hobbies</h2>
+
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-heart"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto">
+                        <video class="img-fluid" autoplay muted loop>
+                            <source src="{{ url_for('static', filename='assets/video/reading.mp4') }}" type="video/mp4">
+                        </video>
+                        <div class="hobby-text p-3 mt-2 text-white" style="background-image: url('{{ url_for('static', filename='assets/img/reading.png') }}'); background-size: cover; background-position: center; border-radius: 10px;">
+
+                        <h2 class="text-center text-dark mt-3">Reading</h2>
+                        <p> I enjoy reading a variety of genres, from fiction to non-fiction, which helps me expand my knowledge and imagination.</p>
+                        <p> I enjoy reading in Hindi, English, and Sanskrit, which allows me to explore diverse cultures and perspectives.</p>
+                        <p> I have a particular interest in reading books related to Indian culture, which deepens my understanding of my heritage.</p>
+                        <p> I also enjoy reading books related to Indian mythology, which fascinates me with its rich stories and characters.</p>
+                        <strong>Books : Godan by Premchand(Hindi), Ramayana by Valmiki(Sanskrit), Mahabharata by Vedavyasa(Sanskrit), Discovery of India by Jawaharlal Nehru(English), The Bhagavad Gita(Sanskrit), Gunahon ka Devta by Dharamvir Bharati(Hindi), Helen Keller's autobiography(English), Gullever's Travels by Jonathan Swift(English), and many more.</strong>
+                    </div>
+                    </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto">
+                        <video class="img-fluid" autoplay muted loop>
+                            <source src="{{ url_for('static', filename='assets/video/traveling.mp4') }}" type="video/mp4">
+                        </video>
+                        <div class="hobby-text p-3 mt-2 text-black " style="background-image: url('{{ url_for('static', filename='assets/img/traveling.png') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
+
+                        <h2 class="text-center text-dark mt-3">Traveling</h2> 
+                        <p> Traveling is one of my greatest passions, but I just treavel within India.</p>
+                        <p> I love exploring new places, experiencing different cultures, and meeting new people.</p>
+                        <p> Traveling allows me to broaden my horizons and gain a deeper understanding of the Indian culture and its diversity.</p>
+                        <p> I have traveled to various places in India, including Delhi, Uttarakhand, Himachal Pradesh, and Rajasthan, which has enriched my perspective on life.</p>
+                        <p> I also enjoy visiting historical sites and monuments, which connect me to India's rich heritage and history.</p>
+                        <strong>Places : Rajasthan, Maharashtra, Delhi, Madhya Pradesh, Karnataka, Kerala, Gujarat, Uttarakhand, Himachal Pradesh, and many more.</strong>
+                        <br>
+                        <strong>I prefer traveling Religious places, Historical places, and Natural places.</strong>
+                        
+                    </div>
+                    </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto">
+                        <video class="img-fluid" autoplay muted loop>
+                            <source src="{{ url_for('static', filename='assets/video/cooking.mp4') }}" type="video/mp4">
+                        </video>
+                        <div class="hobby-text p-3 mt-2 text-white " style="background-image: url('{{ url_for('static', filename='assets/img/cooking.png') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
+                        <h2 class="text-center text-dark mt-3">Cooking</h2>
+                        <p> Cooking is a hobby that I find both enjoyable and rewarding.</p>
+                        <p> Because I live alone in different cities for my education, I have learned to cook a variety of dishes for myself.</p>
+                        <p> I take pleasure in experimenting with different recipes and flavors, which allows me to express my creativity in the kitchen.</p>
+                        <p> Cooking also provides me with a sense of accomplishment, as I can prepare delicious meals for myself and others.</p>
+                        <strong>Food : I can cook a variety of dishes, including Indian, Chinese. Some of my favorite dishes to cook are Biryani(Veg), Pasta, and various Indian curries.</strong>
+                        <strong>Aalu Paratha(My Favorite & my Speciality), Chole Bhature, Rajma Chawal, Dal-Bati Churma, Paneer (various dishes), Gajar Halwa, Moog-Dal Halwa, Kachori, Kheer, Various types of Parathas, Various types of Chatni, South-Indian dishes, and many more.</strong>
+                        </diV>
+                    </div>
+            </div>
+          
+        </div>
+        <section id="training" class="section">
+            <div class="training-item text-white" style="background-image: url('{{ url_for('static', filename='assets/img/writting-bg.jpeg') }}'); background-size: cover; background-position: center; border-radius: 10px; "> 
+                <div class="training-details" >
+                <h2>Writing</h2>
+            <ul>
+                <li>I enjoy writing poetry, which allows me to express my thoughts and emotions creatively.</li>
+                <li>I have a passion for writing short stories, where I can explore different narratives and characters.</li>
+                <li>Writing articles on various topics helps me share my knowledge and insights with others.</li>
+                <li>I also enjoy writing blogs, where I can connect with a wider audience and discuss my interests.</li>
+                <li>My writing style is influenced by my love for literature and my desire to communicate effectively.</li>
+                <li>I also write a book(Khichdi) that metion below.</li>
+            </ul>  
+            <p><a href="\static\assets\CERTIFICATE\book.pdf" target="_blank">View Book</a></p>
+            </div> 
+            <div class="training-preview">
+                        <img src="\static\assets\img\book-pre.jpg" alt="Training Preview" class="training-img">
+                    </div></div> 
+            </div>
+
+             <div class="text-center mt-4">
+            <a class="btn btn-primary btn-xl text-uppercase" href="{{ url_for('index') }}">Back to Home</a>
+        </div>
+        </section> 
+    </div>
+</section>
+
+{% include 'footer.html' %}
+{% block foot %}
+{% endblock %}

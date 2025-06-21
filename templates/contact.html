@@ -1,0 +1,80 @@
+{% include 'header.html' %}
+{% block head %}{% endblock %}
+
+<div class="video-background-container">
+    <video autoplay muted loop playsinline class="video-background">
+        <source src="{{ url_for('static', filename='assets/video/contact-bg.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<section class="page-section py-5 text-white" style="position: relative; backdrop-filter: blur(8px); background: rgba(0, 0, 0, 0.6); border-radius: 20px; margin: 2rem;">
+    <div class="container">
+        <br>
+        <br>
+        <h2 class="text-center text-uppercase display-5 fw-bold mb-4" style="letter-spacing: 1px;">Get in Touch</h2>
+        <div class="divider-custom text-white mb-4">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-envelope"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+
+        <div class="row mb-5 text-center">
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-map-marker-alt fa-2x mb-2"></i>
+                <p>Bambori, Sawai-Madhopur, Rajasthan</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-phone-alt fa-2x mb-2"></i>
+                <p><a href="tel:+918118834830" class="text-white text-decoration-none">+91 81188 34830</a></p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-envelope fa-2x mb-2"></i>
+                <p><a href="mailto:jitendrasewaliya6@gmail.com" class="text-white text-decoration-none">jitendrasewaliya6@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="text-center mb-5">
+            <a href="https://www.linkedin.com/in/er-jitendra-verma-a6606923b/" target="_blank" class="text-white mx-3 fs-3"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/jitendravermaer" target="_blank" class="text-white mx-3 fs-3"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/jsewaliya" target="_blank" class="text-white mx-3 fs-3"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/jitendrasewaliya_vrified/" target="_blank" class="text-white mx-3 fs-3"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <h3 class="text-center mb-4 fw-semibold">Write Me a Message</h3>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form action="/aftersubmit/" method="post" class="bg-light text-dark p-4 rounded shadow-lg">
+                    <div class="mb-3">
+                        <label for="name" class="form-label fw-semibold">Full Name</label>
+                        <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-semibold">Email address</label>
+                        <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label fw-semibold">Phone Number</label>
+                        <input type="tel" class="form-control form-control-lg" id="phone" name="phone" placeholder="e.g. 9876543210" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label fw-semibold">Your Message</label>
+                        <textarea class="form-control form-control-lg" id="message" name="message" rows="5" placeholder="What would you like to say?" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg px-5 shadow">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a class="btn btn-outline-light btn-xl text-uppercase shadow" href="{{ url_for('index') }}">Back to Home</a>
+        </div>
+    </div>
+</section>
+
+{% include 'footer.html' %}
+{% block foot %}{% endblock %}
+

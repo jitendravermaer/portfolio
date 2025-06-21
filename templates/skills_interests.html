@@ -1,0 +1,104 @@
+{% include 'header.html' %}
+{% block head %}
+{% endblock %}
+
+
+<section class="page-section skills-interests bg-skills" id="skills-interests">
+    <div class="container">
+        <br>
+        <br>
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Skills and Interests</h2>
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-lightbulb"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+
+        <p class="text-center">Here are some of my skills and interests:</p>
+
+        <section id="skills" class="section">
+                <div class="skills-grid">
+                    <div class="skill-category text-white" style="background-image: url('{{ url_for('static', filename='assets/img/Programming-Languages-bg.jpeg') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
+                        <h3>Programming Languages</h3>
+                        <ul>
+                            <li><strong>C</strong>: Proficient in procedural programming and understanding of memory management.</li>
+                            <li><strong>C++</strong>: Experienced with object-oriented programming, STL, and algorithmic implementation.
+                            </li>
+                            <li><strong>Java</strong>: Knowledgeable in core Java concepts, including OOP principles and exception
+                                handling.</li>
+                            <li><strong>Python</strong>: Skilled in scripting, automation, and developing web applications and data
+                                analysis.</li>
+                        </ul>
+                    </div>
+                
+                    <div class="skill-category text-white" style="background-image: url('{{ url_for('static', filename='assets/img/web-tech-bg.jpeg') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
+                        <h3>Web Technologies</h3>
+                        <ul>
+                            <li>HTML/CSS: Strong understanding of web page structure, styling, and responsive design
+                                principles.</li>
+                            <li>JavaScript: Basic knowledge, currently improving through projects and tutorials.
+                                Enhancing front-end development skills.</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category text-white" style="background-image: url('{{ url_for('static', filename='assets/img/frame-bg.jpeg') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
+                        <h3>Frameworks and Libraries</h3>
+                        <ul>
+                            <li>Django: Experienced in building and deploying scalable web applications with Django's
+                                ORM and templating system.</li>
+                            <li>Flask: Proficient in creating lightweight and modular web applications using Flask.</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category" style="background-image: url('{{ url_for('static', filename='assets/img/database-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
+                        <h3>Database Skills</h3>
+                        <ul>
+                            <li>Database Management Systems (DBMS): MySQL, SQL Server, SQLite</li>
+                            <li>Query Languages: SQL (CRUD operations, Joins, Subqueries, and Performance Optimization)
+                            </li>
+                            <li>Database Design: Normalization, ER Diagrams</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category text-white" style="background-image: url('{{ url_for('static', filename='assets/img/operating-system-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
+                        <h3>Operating Systems</h3>
+                        <ul>
+                            <li>Windows: Experienced with Windows 7, 10, 11.</li>
+                            <li>Linux: Practical knowledge of Linux commands and environment for development and server
+                                management.</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category"    style="background-image: url('{{ url_for('static', filename='assets/img/Computer-networking-bg.jpeg') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
+                        <h3>Computer Networking</h3>
+                        <ul>
+                            <li>Basic understanding of networking concepts such as IP addressing, DNS, and HTTP
+                                protocols.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <br>
+        <section id="training" class="section">
+            <di class="training-item text-white" style="background-image: url('{{ url_for('static', filename='assets/img/intrests-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px; "> 
+                <div class="training-details" >
+                <h2>Interests</h2>
+            <ul>
+                <li>Artificial Intelligence: Exploring AI applications in software development and automation.</li>
+                <li>Web Development: Passionate about creating user-friendly and efficient web applications.</li>
+                <li>Data Science: Interested in data analysis, visualization, and machine learning techniques.</li>
+                <li>Open Source Contribution: Actively contributing to open source projects to enhance skills and
+                    collaborate with the community.</li>
+                <li>Problem Solving: Enjoy tackling complex problems and finding innovative solutions.</li>
+                <li>Continuous Learning: Committed to staying updated with the latest technologies and industry trends
+                    through online courses, workshops, and tech meetups.</li>
+            </ul>  
+            </div>  
+            </div>
+             <div class="text-center mt-4">
+            <a class="btn btn-primary btn-xl text-uppercase" href="{{ url_for('index') }}">Back to Home</a>
+        </div>
+        </section> 
+    </div>
+</section>
+
+
+{% include 'footer.html' %}
+{% block foot %}
+{% endblock %}
