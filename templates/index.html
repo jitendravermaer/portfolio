@@ -41,65 +41,95 @@
 
         
 
-<section class="page-section portfolio" id="portfolio" >
-    
-        <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-4 mb-5">
-                <a href="{{ url_for('academic_qualification') }}" class="text-decoration-none">
-                    <div class="portfolio-item mx-auto">
-                        <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/Academic Qualification.jpg') }}" alt="Academic Qualification" />
-                        <h2 class="text-center text-dark mt-3">Academic Qualification</h2>
-                    </div>
-                </a>
-            </div>
+<section class="portfolio-section py-5 container text-uppercase font-weight-bold text-white rounded" id="portfolio">
+  <div class="row justify-content-center g-4">
 
-            <div class="col-md-6 col-lg-4 mb-5">
-                <a href="{{ url_for('professional_experience') }}" class="text-decoration-none">
-                    <div class="portfolio-item mx-auto">
-                        <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/Professional Experience.jpg') }}" alt="Professional Experience" />
-                        <h2 class="text-center text-dark mt-3">Professional Experience</h2>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-5">
-                <a href="{{ url_for('skills_interests') }}" class="text-decoration-none">
-                    <div class="portfolio-item mx-auto">
-                        <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/SkillsAndInterests.png') }}" alt="Skills and Interests" />
-                        <h2 class="text-center text-dark mt-3">Skills and Interests</h2>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                <a href="{{ url_for('projects') }}" class="text-decoration-none">
-                    <div class="portfolio-item mx-auto">
-                        <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/Projects.jpg') }}" alt="Projects" />
-                        <h2 class="text-center text-dark mt-3">Projects</h2>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                <a href="{{ url_for('training_certifications') }}" class="text-decoration-none">
-                    <div class="portfolio-item mx-auto">
-                        <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/Training&Certifications.jpg') }}" alt="Training & Certifications" />
-                        <h2 class="text-center text-dark mt-3">Training & Certifications</h2>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <a href="{{ url_for('hobbies') }}" class="text-decoration-none">
-                    <div class="portfolio-item mx-auto">
-                        <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/Hobbies.jpg') }}" alt="Hobbies" />
-                        <h2 class="text-center text-dark mt-3">Hobbies</h2>
-                    </div>
-                </a>
-            </div>
+    <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+      <a href="{{ url_for('professional_experience') }}" class="text-decoration-none">
+        <div class="custom-card text-center">
+          <i class="fas fa-briefcase icon-top"></i>
+          <h5>Professional Experience</h5>
         </div>
+      </a>
     </div>
+    
+    <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+      <a href="{{ url_for('academic_qualification') }}" class="text-decoration-none">
+        <div class="custom-card text-center">
+          <div><i class="fas fa-graduation-cap icon-top"></i></div>
+          <h5>Academic Qualifications</h5>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+      <a href="{{ url_for('projects') }}" class="text-decoration-none">
+        <div class="custom-card text-center">
+          <i class="fas fa-project-diagram icon-top"></i>
+          <h5>Projects</h5>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+      <a href="{{ url_for('skills_interests') }}" class="text-decoration-none">
+        <div class="custom-card text-center">
+          <i class="fas fa-lightbulb icon-top"></i>
+          <h5>Skills & Interests</h5>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+      <a href="{{ url_for('training_certifications') }}" class="text-decoration-none">
+        <div class="custom-card text-center">
+          <i class="fas fa-certificate icon-top"></i>
+          <h5>Training & Certifications</h5>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+      <a href="{{ url_for('hobbies') }}" class="text-decoration-none">
+        <div class="custom-card text-center">
+          <i class="fas fa-heart icon-top"></i>
+          <h5>Hobbies</h5>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+      <a href="{{ url_for('resume') }}" class="text-decoration-none">
+        <div class="custom-card text-center">
+          <i class="fas fa-file-alt icon-top"></i>
+          <h5>Resume</h5>
+        </div>
+      </a>
+    </div>
+    
+    <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+        <a href="{{ url_for('contact') }}" class="text-decoration-none">
+            <div class="custom-card text-center">
+                <i class="fas fa-envelope icon-top"></i>
+                <h5>Contact</h5>
+            </div>
+        </a>
+    </div>
+     
+    <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+      <a href="{{ url_for('about') }}" class="text-decoration-none">
+        <div class="custom-card text-center">
+          <i class="fas fa-info-circle icon-top"></i>
+          <h5>About Me</h5>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+
 </section>
+
 {% include 'footer.html' %}
 {% block foot %}
 {% endblock %}        
