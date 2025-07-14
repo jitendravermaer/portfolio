@@ -1,5 +1,6 @@
 {% include 'header.html' %}
 {% block head %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 {% endblock %}
 
 <div class="video-background-container">
@@ -11,8 +12,7 @@
 
 <section class="page-section" id="projects">
     <div class="container">
-        <br>
-        <br>
+        <br><br>
         <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
 
         <!-- Icon Divider -->
@@ -22,124 +22,158 @@
             <div class="divider-custom-line"></div>
         </div>
 
-            <section id="projects" class="section">
-                <div class="project-grid">
-                    <div class="project-item" style="background-image: url('{{ url_for('static', filename='assets/img/bank-bg.png') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
-                        <h3>Bank Management System</h3>
-                        <p><strong>Technologies:</strong> Python, Java, SQL</p>
-                        <ul>
-                            <li>Developed a robust application to manage banking operations, including account creation,
-                                deposits, withdrawals, and transaction tracking.</li>
-                            <li>Designed secure SQL queries and implemented efficient database handling.</li>
-                        </ul>
-                        <button class="text-center mt-4 btn"><p><a href="https://github.com/jitendravermaer/jitendracode/blob/main/Bank%20Application%20with%20Database%20-%20%20Jitendra.ipynb" target="_blank">View Code</a></p></button>
-                    </div>
-                    <div class="project-item text-white" style="background-image: url('{{ url_for('static', filename='assets/img/AIVoice-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
-                        <h3 class="text-white">AI Voice Tool</h3>
-                        <p><strong>Technologies:</strong> Python, SpeechRecognition, Pyttsx3</p>
-                        <ul>
-                            <li>Created an AI-based voice assistant capable of performing system commands, setting
-                                reminders, and web searches.</li>
-                        </ul>
-                    <button class="text-center mt-4 btn"><p><a href="\static\assets\CERTIFICATE\jitendra-verma--grras-209356.pdf" target="_blank">View Project</a></p></button>
+        <section id="projects" class="section">
+            <div class="project-grid">
 
-                    </div>
-                    <div class="project-item" style="background-image: url('{{ url_for('static', filename='assets/img/visualization-bg.png') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
-                        <h3>Data Visualization</h3>
-                        <p><strong>Technologies:</strong> Python, pandas, matplotlib, seaborn</p>
-                        <ul>
-                            <li>Analyzed complex datasets and visualized trends to aid decision-making.</li>
-                        </ul>
-                        <button class="text-center mt-4 btn"><p><a href="\static\assets\CERTIFICATE\jitendra-verma--grras-209356.pdf" target="_blank">View Project</a></p></button>
-
-                    </div>
-                    <div class="project-item" style="background-image: url('{{ url_for('static', filename='assets/img/portfolio-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
-                        <h3>Portfolio Website</h3>
-                        <p><strong>Technologies:</strong> Flask, HTML, CSS, JavaScript</p>
-                        <ul>
-                            <li>Designed and developed a responsive personal portfolio website to showcase skills and
-                                projects.</li>
-                        </ul>
-                        <button class="text-center mt-4 btn"><p><a href="https://portfolio-3atg.onrender.com/" target="_blank">View Project</a></p></button>
-
-                    </div>
-                    <div class="project-item" style="background-image: url('{{ url_for('static', filename='assets/img/helmet-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
-                        <h3>Smart Helmet (IoT Team Project)</h3>
-                        <p><strong>Technologies:</strong> IoT, Sensors, Microcontrollers</p>
-                        <ul>
-                            <li>Contributed to the structural design of a helmet with IoT-enabled features, enhancing
-                                user safety and communication in hazardous environments.</li>
-                        </ul>
-                        <button class="text-center mt-4 btn"><p><a href="\static\assets\CERTIFICATE\jitendra-verma--grras-209356.pdf" target="_blank">View Project</a></p></button>
-
-                    </div>
-                    <div class="project-item" style="background-image: url('{{ url_for('static', filename='assets/img/google-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
-                        <h3>Google Play Store Data Manipulation</h3>
-                        <p><strong>Technologies:</strong> Python, google_play_scraper, pandas</p>
-                        <ul>
-                            <li>Scraped, cleaned, and analyzed app data for trends and actionable insights.</li>
-                        </ul>
-                        <button class="text-center mt-4 btn"><p><a href="\static\assets\CERTIFICATE\jitendra-verma--grras-209356.pdf" target="_blank">View Project</a></p></button>
-
-                    </div>
-                    <div class="project-item text-white" style="background-image: url('{{ url_for('static', filename='assets/img/tic-tac-toe-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
-                        <h3 class="text-white">🕹 Tic Tac Toe Game</h3>
-                        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-                        <ul>
-                            <li>Designed and developed a two-player Tic Tac Toe game with a clean, interactive user interface.</li>
-                            <li>Implemented game logic for detecting wins, draws, and player turns dynamically using JavaScript.</li>
-                        </ul>
-                        <button class="text-center mt-4 btn"><p><a href="https://jitendravermaer.github.io/TIC-TAC-TOE-GAME/" target="_blank">View Project</a></p></button>
-
-                    </div>
-                    <div class="project-item" style="background-image: url('{{ url_for('static', filename='assets/img/rock-paper-scissors-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
-                        <h3>✊🖐✌ Stone, Paper & Scissors Game</h3>
-                        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-                        <ul>
-                            <li>Built an engaging Stone-Paper-Scissors game with randomized computer logic and responsive user input.</li>
-                            <li>Integrated intuitive visuals and smooth animations to enhance user interaction.</li>
-                        </ul>
-                        <button class="text-center mt-4 btn"><p><a href="https://jitendravermaer.github.io/Stone-Paper-Scissors-Game/" target="_blank">View Project</a></p></button>
-
-                    </div>
-                    <div class="project-item" style="background-image: url('{{ url_for('static', filename='assets/img/currency-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
-                        <h3>💱 Currency Converter</h3>
-                        <p><strong>Technologies:</strong> HTML, CSS, JavaScript, REST API</p>
-                        <ul>
-                            <li>Developed a live currency converter using real-time exchange rate API integration.</li>
-                            <li>Implemented dropdown selectors, input handling, and currency formatting for a user-friendly financial tool.</li>
-                        </ul>
-                        <button class="text-center mt-4 btn"><p><a href="https://jitendravermaer.github.io/Currency-Converter/" target="_blank">View Project</a></p></button>
-
-                    </div>
-                    <div class="project-item text-white" style="background-image: url('{{ url_for('static', filename='assets/img/social-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
-                        <h3 class="text-white">Social Media Application</h3>
-                        <p><strong>Technologies:</strong> MongoDB, React.js, Node.js, Express.js (MERN Stack)</p>
-                        <ul>
-                            <li>Developed a full-stack social media platform as a final year group project to enable users to create profiles, post updates, comment, and interact in real-time.</li>
-                            <li>Implemented authentication (JWT), secure APIs, and used MongoDB for storing user data and posts. Built an interactive front-end using React.js with dynamic routing and responsive design.</li>
-                        </ul>
-                        <button class="text-center mt-4 btn"><p><a href="https://github.com/jitendravermaer/Social-Media-Platform" target="_blank">View Project</a></p></button>
-
-                    </div>
-                    <div class="project-item" style="background-image: url('{{ url_for('static', filename='assets/img/Number-Game-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px; ">
-                        <h3>Number Guessing Game</h3>
-                        <p><strong>Technologies:</strong> Python (Jupyter Notebook)</p>
-                        <ul>
-                            <li>Developed a terminal-based number guessing game where the computer randomly selects a number within a range and the player attempts to guess it.</li>
-                            <li>The project served as a practical exercise in logic building and interactive Python scripting using a Jupyter Notebook environment.</li>
-                        </ul>
-                        <button class="text-center mt-4 btn"><p><a href="https://github.com/jitendravermaer/jitendracode/blob/main/Number%20Guessing%20Game%20.ipynb" target="_blank">View Project</a></p></button>
-
+                <div class="project-item" style="background-image: url('{{ url_for('static', filename='assets/img/bank-bg.png') }}'); background-size: cover; background-position: center; border-radius: 10px;">
+                    <h3><i class="fas fa-university icon-project"></i> Bank Management System</h3>
+                    <p><strong>Technologies:</strong> Python, Java, SQL</p>
+                    <ul>
+                        <li>Developed a robust application to manage banking operations, including account creation, deposits, withdrawals, and transaction tracking.</li>
+                        <li>Designed secure SQL queries and implemented efficient database handling.</li>
+                    </ul>
+                    <div class="text-center mt-4">
+                        <a class="btn btn-outline-dark btn-x2 shadow" href="https://github.com/jitendravermaer/jitendracode/blob/main/Bank%20Application%20with%20Database%20-%20%20Jitendra.ipynb" target="_blank"><i class="fas fa-eye me-2"></i>View Code</a>
                     </div>
                 </div>
-            </section>
+
+                <div class="project-item text-white" style="background-image: url('{{ url_for('static', filename='assets/img/AIVoice-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px;">
+                    <h3 class="text-white"><i class="fas fa-microphone icon-project"></i> AI Voice Tool</h3>
+                    <p><strong>Technologies:</strong> Python, SpeechRecognition, Pyttsx3</p>
+                    <ul>
+                        <li>Created an AI-based voice assistant capable of performing system commands, setting reminders, and web searches.</li>
+                    </ul>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="text-center mt-4">
+                        <a class="btn btn-outline-light btn-x2 shadow" href="https://github.com/jitendravermaer/jitendracode/blob/main/AI%20Voice%20Tool%20-%20Jitendra.ipynb" target="_blank"><i class="fas fa-eye me-2"></i>View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-item" style="background-image: url('{{ url_for('static', filename='assets/img/visualization-bg.png') }}'); background-size: cover; background-position: center; border-radius: 10px;">
+                    <h3><i class="fas fa-chart-bar icon-project"></i> Data Visualization</h3>
+                    <p><strong>Technologies:</strong> Python, pandas, matplotlib, seaborn</p>
+                    <ul>
+                        <li>Analyzed complex datasets and visualized trends to aid decision-making.</li>
+                    </ul> 
+                    <br>
+                    <br>    
+                    <br>
+                    <br>
+                    <div class="text-center mt-4">
+                        <a class="btn btn-outline-dark btn-x2 shadow" href="https://github.com/jitendravermaer/jitendracode/blob/main/Data%20Visualization%20-%20Jitendra.ipynb" target="_blank"><i class="fas fa-eye me-2"></i>View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-item" style="background-image: url('{{ url_for('static', filename='assets/img/portfolio-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px;">
+                    <h3><i class="fas fa-globe icon-project"></i> Portfolio Website</h3>
+                    <p><strong>Technologies:</strong> Flask, HTML, CSS, JavaScript</p>
+                    <ul>
+                        <li>Designed and developed a responsive personal portfolio website to showcase skills and projects.</li>
+                    </ul>
+                    <div class="text-center mt-4">
+                        <a class="btn btn-outline-dark btn-x2 shadow" href="https://github.com/jitendravermaer/Portfolio" target="_blank"><i class="fas fa-eye me-2"></i>View Code</a>
+                        <a class="btn btn-outline-dark btn-x2 shadow" href="https://portfolio-3atg.onrender.com/" target="_blank"><i class="fas fa-play me-2"></i>Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-item" style="background-image: url('{{ url_for('static', filename='assets/img/helmet-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px;">
+                    <h3><i class="fas fa-hard-hat icon-project"></i> Smart Helmet (IoT Team Project)</h3>
+                    <p><strong>Technologies:</strong> IoT, Sensors, Microcontrollers</p>
+                    <ul>
+                        <li>Contributed to the structural design of a helmet with IoT-enabled features, enhancing user safety and communication in hazardous environments.</li>
+                    </ul>
+                    <div class="text-center mt-4">
+                        <a class="btn btn-outline-dark btn-x2 shadow" href="https://github.com/jitendravermaer/Smart-Helmet" target="_blank"><i class="fas fa-eye me-2"></i>View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-item" style="background-image: url('{{ url_for('static', filename='assets/img/google-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px;">
+                    <h3><i class="fab fa-google-play icon-project"></i> Google Play Store Data Manipulation</h3>
+                    <p><strong>Technologies:</strong> Python, google_play_scraper, pandas</p>
+                    <ul>
+                        <li>Scraped, cleaned, and analyzed app data for trends and actionable insights.</li>
+                    </ul>
+                    <div class="text-center mt-4">
+                        <a class="btn btn-outline-dark btn-x2 shadow" href="https://github.com/jitendravermaer/jitendracode/blob/main/Google%20Play%20Store%20Data%20Manipulation.ipynb" target="_blank"><i class="fas fa-eye me-2"></i>View Code</a>
+                    </div>  
+                </div>
+
+                <div class="project-item text-white" style="background-image: url('{{ url_for('static', filename='assets/img/tic-tac-toe-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px;">
+                    <h3 class="text-white"><i class="fas fa-gamepad icon-project"></i> Tic Tac Toe Game</h3>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                    <ul>
+                        <li>Designed and developed a two-player Tic Tac Toe game with a clean, interactive user interface.</li>
+                        <li>Implemented game logic for detecting wins, draws, and player turns dynamically using JavaScript.</li>
+                    </ul>
+                    <div class="text-center mt-4">
+                        <a class="btn btn-outline-light btn-x2 shadow" href="https://github.com/jitendravermaer/TIC-TAC-TOE-GAME/" target="_blank"><i class="fas fa-eye me-2"></i>View Code</a>
+                        <a class="btn btn-outline-light btn-x2 shadow" href="https://jitendravermaer.github.io/TIC-TAC-TOE-GAME/" target="_blank"><i class="fas fa-play me-2"></i>Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-item" style="background-image: url('{{ url_for('static', filename='assets/img/rock-paper-scissors-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px;">
+                    <h3><i class="fas fa-hand-rock icon-project"></i> Stone, Paper & Scissors Game</h3>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                    <ul>
+                        <li>Built an engaging Stone-Paper-Scissors game with randomized computer logic and responsive user input.</li>
+                        <li>Integrated intuitive visuals and smooth animations to enhance user interaction.</li>
+                    </ul>
+                    <div class="text-center mt-4">
+                        <a class="btn btn-outline-dark btn-x2 shadow" href="https://github.com/jitendravermaer/Stone-Paper-Scissors-Game" target="_blank"><i class="fas fa-eye me-2"></i>View Code</a>
+                        <a class="btn btn-outline-dark btn-x2 shadow" href="https://jitendravermaer.github.io/Stone-Paper-Scissors-Game/" target="_blank"><i class="fas fa-play me-2"></i>Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-item" style="background-image: url('{{ url_for('static', filename='assets/img/currency-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px;">
+                    <h3><i class="fas fa-coins icon-project"></i> Currency Converter</h3>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript, REST API</p>
+                    <ul>
+                        <li>Developed a live currency converter using real-time exchange rate API integration.</li>
+                        <li>Implemented dropdown selectors, input handling, and currency formatting for a user-friendly financial tool.</li>
+                    </ul>
+                    <div class="text-center mt-4">
+                        <a class="btn btn-outline-dark btn-x2 shadow" href="https://github.com/jitendravermaer/Currency-Converter" target="_blank"><i class="fas fa-eye me-2"></i>View Code</a>
+                        <a class="btn btn-outline-dark btn-x2 shadow" href="https://jitendravermaer.github.io/Currency-Converter/" target="_blank"><i class="fas fa-play me-2"></i>Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-item text-white" style="background-image: url('{{ url_for('static', filename='assets/img/social-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px;">
+                    <h3 class="text-white"><i class="fas fa-users icon-project"></i> Social Media Application</h3>
+                    <p><strong>Technologies:</strong> MongoDB, React.js, Node.js, Express.js (MERN Stack)</p>
+                    <ul>
+                        <li>Developed a full-stack social media platform as a final year group project to enable users to create profiles, post updates, comment, and interact in real-time.</li>
+                        <li>Implemented authentication (JWT), secure APIs, and used MongoDB for storing user data and posts. Built an interactive front-end using React.js with dynamic routing and responsive design.</li>
+                    </ul>
+                    <div class="text-center mt-4">
+                        <a class="btn btn-outline-light btn-x2 shadow" href="https://github.com/jitendravermaer/Social-Media-Platform" target="_blank"><i class="fas fa-eye me-2"></i>View Code</a>
+                        <a class="btn btn-outline-light btn-x2 shadow" href="https://jitendravermaer.github.io/Social-Media-Platform/" target="_blank"><i class="fas fa-play me-2"></i>Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-item" style="background-image: url('{{ url_for('static', filename='assets/img/Number-Game-bg.jpg') }}'); background-size: cover; background-position: center; border-radius: 10px;">
+                    <h3><i class="fas fa-question-circle icon-project"></i> Number Guessing Game</h3>
+                    <p><strong>Technologies:</strong> Python (Jupyter Notebook)</p>
+                    <ul>
+                        <li>Developed a terminal-based number guessing game where the computer randomly selects a number within a range and the player attempts to guess it.</li>
+                        <li>The project served as a practical exercise in logic building and interactive Python scripting using a Jupyter Notebook environment.</li>
+                    </ul>
+                    <div class="text-center mt-4">
+                        <a class="btn btn-outline-dark btn-x2 shadow mb-2" href="https://github.com/jitendravermaer/jitendracode/blob/main/Number%20Guessing%20Game%20.ipynb" target="_blank"><i class="fas fa-eye me-2"></i>View Code</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <div class="text-center mt-4">
             <a class="btn btn-primary btn-xl text-uppercase" href="{{ url_for('index') }}">Back to Home</a>
         </div>
     </div>
 </section>
-            
+
 {% include 'footer.html' %}
 {% block foot %}
 {% endblock %}
